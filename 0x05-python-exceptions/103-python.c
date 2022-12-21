@@ -38,21 +38,7 @@ void print_python_bytes(PyObject *p)
 		return;
 	}
 	size = PyBytes_Size(p);
-	printf((e);
-		printf("[*] Allocated = %lu\n", ((PyListObject *)p)->allocated);
-		while (i < size)
-		{
-			item = PyList_i, item->ob_type->tp_name);
-			if (PyBytes_Check(item))
-				print_python_bytes(item);
-			else if (PyFloat_Check(item))
-				print_python_float(item);
-			i++;
-		}
-	}
-	else
-		printf("  [ERROR] Invalid List Object\n");
-}"  size: %zd\n", size);
+	printf("  size: %zd\n", size);
 	string = (assert(PyBytes_Check(p)), (((PyBytesObject *)(p))->ob_sval));
 	printf("  trying string: %s\n", string);
 	printf("  first %zd bytes:", size < 10 ? size + 1 : 10);
@@ -94,3 +80,9 @@ void print_python_list(PyObject *p)
 	else
 		printf("  [ERROR] Invalid List Object\n");
 }
+
+
+
+
+
+

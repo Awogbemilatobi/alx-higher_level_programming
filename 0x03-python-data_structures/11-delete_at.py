@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+"""Author: Awogbemila Tobi
+a function that deletes the item at a specific position in a list"""
+
 def delete_at(my_list=[], idx=0):
-    length = len(my_list)
 
-    if idx < 0 or idx >= length:
-        return (my_list)
-
-    del my_list[idx]
-
-    return (my_list)
+    if idx < 0 or idx > len(my_list):
+        return My_list
+    else:
+        del(my_list[idx])
+    return my_list

@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-# Author -Oladele Adewunmi
+# Author - Awogbemila Tobi
+"""a program that prints the ASCII alphabet, in reverse order, alternating lowercase 
+and uppercase (z in lowercase and Y in uppercase), not followed by a new line
 
-i = 0
-for c in range(ord('z'), ord('a') - 1, -1):
-    print("{}".format(chr(c - i)), end="")
-    i = 32 if i == 0 else 0
+for alphabets in reversed(range(97, 123)):
+    if alphabets%2 == 1:
+        print(f"{chr(alphabets-32)}", end='')
+    else:
+        print(f"{chr(alphabets)}", end='')

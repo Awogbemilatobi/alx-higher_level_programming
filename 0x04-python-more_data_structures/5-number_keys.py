@@ -1,9 +1,7 @@
 #!/usr/bin/python3
+"""Author: Awogbemila Tobi
+Function that returns the number of keys in a dictionary"""
+
 def number_keys(a_dictionary):
-    num = 0
-    list_keys = list(a_dictionary.keys())
-
-    for i in list_keys:
-        num += 1
-
-    return (num)
+    len_key = len(a_dictionary.keys())
+    return len_key

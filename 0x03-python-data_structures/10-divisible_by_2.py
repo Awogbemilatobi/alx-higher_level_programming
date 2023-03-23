@@ -1,11 +1,14 @@
 #!/usr/bin/python3
+"""Author: Awogbemila Tobi
+a function that finds all multiples of 2 in a list"""
+
 def divisible_by_2(my_list=[]):
-    check_div = []
-
-    for i in range(len(my_list)):
-        if my_list[i] % 2 == 0:
-            check_div.append(True)
+    new_list = []
+    
+    for elements in my_list:
+        if my_list[elements] % 2 == 0:
+            new_list.append(True)
         else:
-            check_div.append(False)
-
-    return (check_div)
+            new_list.append(False)
+    
+    return new_list 

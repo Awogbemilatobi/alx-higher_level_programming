@@ -1,8 +1,14 @@
 #!/usr/bin/python3
+"""Author: Awogbemila Tobi
+a function that prints a matrix of integers"""
+
 def print_matrix_integer(matrix=[[]]):
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            if j != 0:
-                print(" ", end='')
-            print("{:d}".format(matrix[i][j]), end='')
+        for column in matrix:
+            print()
+            for line in column:
+                print(f"{str(line)} ", end='')
         print()
+
+
+
+

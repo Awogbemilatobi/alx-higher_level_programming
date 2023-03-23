@@ -1,13 +1,17 @@
 #!/usr/bin/python3
+"""Author: Awogbemila Tobi
+a function that returns the weighted average of all
+integers tuple (<score>, <weight>)"""
+
 def weight_average(my_list=[]):
-    if not my_list:
+    if my_list == []:
         return 0
 
-    num = 0
-    den = 0
+    sums_mul = 0
+    sums_div = 0
 
     for tup in my_list:
-        num += tup[0] * tup[1]
-        den += tup[1]
+        sums_mul += tup[0] * tup[1]
+        sums_div += tup[1]
 
-    return (num / den)
+    return (sums_mul / sums_div)

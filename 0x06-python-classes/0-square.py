@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+#Author: Awogbemila Tobi
 
-"""Define a class Square."""
+"""Defines an Empty class Square."""
 
 
 class Square:

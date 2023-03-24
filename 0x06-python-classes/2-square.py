@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+#Author: Awogbemila Tobi
 
 """Define a class Square."""
 
 
 class Square:
-    """Represent a square."""
+    """Represent a square if its an integer whose value
+        is greater than than or equal to zero."""
 
     def __init__(self, size=0):
         """Initialize a new Square.

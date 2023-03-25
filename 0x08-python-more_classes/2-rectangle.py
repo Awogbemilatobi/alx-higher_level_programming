@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#Author: Awogbemila Tobi
 """Defines a Rectangle class."""
 
 
@@ -46,6 +47,8 @@ class Rectangle:
 
     def perimeter(self):
         """Return the perimeter of the Rectangle."""
-        if self.__width == 0 or self.__height == 0:
-            return (0)
-        return ((self.__width * 2) + (self.__height * 2))
+        if self.__height == 0 or self.__width == 0:
+            perimeter = 0
+        else:
+            perimeter = ((self.__height * 2) + (self.__width * 2))
+        return perimeter

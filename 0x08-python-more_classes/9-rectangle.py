@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#Author: Awogbemila Tobi
 """Defines a Rectangle class."""
 
 
@@ -90,18 +91,20 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ("")
 
-        rect = []
-        for i in range(self.__height):
-            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
-            if i != self.__height - 1:
-                rect.append("\n")
-        return ("".join(rect))
+        else:
+            rect = ""
+            for height in range(self.__height):
+                for width in range(self.__width):
+                    rect += str(self.print_symbol)
+                rect += "\n"
+        return (rect)
 
     def __repr__(self):
-        """Return the string representation of the Rectangle."""
-        rect = "Rectangle(" + str(self.__width)
-        rect += ", " + str(self.__height) + ")"
-        return (rect)
+        """return a string representation of the rectangle
+            to be able to recreate a new instance by using eval()
+        """
+        rect = "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")" 
+        return (rect
 
     def __del__(self):
         """Print a message for every deletion of a Rectangle."""

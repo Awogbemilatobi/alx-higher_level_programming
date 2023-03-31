@@ -1,15 +1,14 @@
 #!/usr/bin/python3
-"""A script that
-- fetches https://alx-intranet.hbtn.io/status.
-- uses urlib package
+"""A script that will fetch https://alx-intranet.hbtn.io/status. using urlib package
 """
 
 
 if __name__ == '__main__':
+
     import urllib.request
 
-    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as res:
-        content = res.read()
+    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as r:
+        content = r.read()
         print("Body response:")
         print("\t- type: {}".format(type(content)))
         print("\t- content: {}".format(content))

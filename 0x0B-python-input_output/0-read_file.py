@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#Author: Awogbemila Tobi
 """Defines a text file-reading function."""
 
 

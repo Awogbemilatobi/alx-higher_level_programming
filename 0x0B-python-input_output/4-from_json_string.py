@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # 6-from_json_string.py
+#Author: Awogbemila Tobi
 """Defines a JSON-to-object function."""
 import json
 
